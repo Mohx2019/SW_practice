@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video to Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Video to Us</h1>
+    <input type="text" id="searchBox" placeholder="Search for a video...">
+    <button onclick="searchVideos()">Search</button>
+    <button onclick="loadVideosDetails()">Show details</button>
+    <button onclick="noDetails()">No details</button>
+
+    <h2>Upload a Video</h2>
+    <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+        <input type="text" name="title" placeholder="Video Title" required>
+        <input type="file" name="video" accept="video/*" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <h2>All Videos</h2>
+    <div id="videos"></div>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
