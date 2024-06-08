@@ -3,7 +3,7 @@ const path = require('path');
 const multer = require('multer');
 const fs = require('fs');
 const app = express();
-const PORT = 3000;
+const PORT = 80;
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
