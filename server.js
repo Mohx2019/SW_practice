@@ -44,6 +44,7 @@ app.post('/upload', upload.single('video'), (req, res) => {
     const videoFilename = req.file.filename;
     videos.push({ title: videoTitle, filename: videoFilename });
     res.redirect('/');
+    x = 12;
 });
 
 app.listen(PORT, () => {
